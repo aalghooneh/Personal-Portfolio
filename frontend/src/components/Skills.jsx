@@ -89,8 +89,8 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="skills-section" ref={sectionRef}>
-      <div className="container">
+    <section id="skills" className="skills-section bg-black bg-opacity-60 z-10" ref={sectionRef}>
+      <div className="container ">
         <h2 className="section-title animate-on-scroll">Technical Expertise</h2>
         <p className="section-subtitle animate-on-scroll">
           A comprehensive research and development toolkit spanning autonomous vehicles, machine learning, and full-stack development

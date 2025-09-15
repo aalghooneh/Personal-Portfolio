@@ -1,8 +1,38 @@
 import React, { useEffect, useRef } from "react";
 import { ChevronDown, Github, Linkedin, Mail, GraduationCap } from "lucide-react";
 
+
+const AnchorIcon = ({ Icon, hrefIcon }) => {
+    return (
+      <div
+        className="
+          group relative flex w-14 h-14 items-center justify-center
+          border-4 border-green-400 rounded-full overflow-hidden
+          before:rounded-full
+          before:content-[''] before:absolute before:inset-0
+          before:bg-green-400 before:scale-0 before:transition-transform 
+          before:duration-300 before:ease-in-out
+          hover:before:scale-100
+        "
+      >
+        <a
+          href={hrefIcon}
+          className="
+            relative z-10 flex w-full h-full items-center justify-center 
+            text-green-400 group-hover:text-white 
+            p-2 transform transition-transform duration-300 group-hover:scale-110
+          "
+        >
+          <Icon size={28} />
+        </a>
+      </div>
+    );
+  };
+  
+
 const MatrixRain = () => {
   const canvasRef = useRef(null);
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -103,7 +133,7 @@ const Hero = () => {
               
               <div className="mb-6 space-y-2">
                 <div className="flex items-center space-x-2">
-                  <span className="text-green-300 text-lg font-semibold">Ph.D. • University of Waterloo</span>
+                  <span className="text-green-300 text-lg font-semibold">Ph.D. @ Robotics • University of Waterloo</span>
                 </div>
                 <span className="text-green-300 text-lg font-semibold">LLMs • Multi-Sensor Fusion • Computer Vision</span>
               </div>
@@ -116,43 +146,17 @@ const Hero = () => {
               
               <div className="flex flex-row space-x-4 items-center">
                 <button 
-                  className="bg-green-500 hover:bg-green-400 text-black font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/25"
+                  className="border border-green-400 hover:bg-green-400 text-green-400 hover:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/25"
                   onClick={scrollToAbout}
                 >
                   Explore My Research
                 </button>
                 
                 <div className="flex space-x-6">
-                  <a 
-                    href="https://www.linkedin.com/in/ahmad-alghooneh-176403169/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-green-400 hover:text-green-300 transition-colors duration-300 transform hover:scale-110"
-                  >
-                    <Linkedin size={28} />
-                  </a>
-                  <a 
-                    href="https://scholar.google.com/citations?user=svgG4CQAAAAJ&hl=en" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-green-400 hover:text-green-300 transition-colors duration-300 transform hover:scale-110"
-                  >
-                    <GraduationCap size={28} />
-                  </a>
-                  <a 
-                    href="https://github.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-green-400 hover:text-green-300 transition-colors duration-300 transform hover:scale-110"
-                  >
-                    <Github size={28} />
-                  </a>
-                  <a 
-                    href="mailto:ahmad.alghooneh@uwaterloo.ca" 
-                    className="text-green-400 hover:text-green-300 transition-colors duration-300 transform hover:scale-110"
-                  >
-                    <Mail size={28} />
-                  </a>
+                  <AnchorIcon Icon={Linkedin} hrefIcon={"https://www.linkedin.com/in/ahmad-alghooneh-176403169/"}/>
+                  <AnchorIcon Icon={GraduationCap} hrefIcon={"https://scholar.google.com/citations?user=svgG4CQAAAAJ&hl=en"} />
+                  <AnchorIcon Icon={Github} hrefIcon={"https://github.com/aalghooneh"}/>
+                  <AnchorIcon Icon={Mail} hrefIcon="mailto:a.alghooneh@gmail.com" />
                 </div>
               </div>
             </div>

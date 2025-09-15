@@ -32,12 +32,15 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="about-section" ref={sectionRef}>
+    <section id="about" className="about-section bg-black bg-opacity-60" ref={sectionRef}>
       <div className="container">
         <div className="about-content">
           <div className="about-text">
-            <h2 className="section-title animate-on-scroll">About Me</h2>
-            <p className="about-description animate-on-scroll">{about.description}</p>
+            <div className="flex flex-row space-x-3">
+                <h2 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight ">About</h2>
+                <h2 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-green-400"> Me!</h2>
+            </div>
+            <p className="about-description animate-on-scroll text-justify">{about.description}</p>
             
             <div className="about-highlights">
               {about.highlights.map((highlight, index) => (

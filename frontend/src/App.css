@@ -74,8 +74,6 @@ html {
   font-weight: 900;
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 0.9;
-  color: var(--text-primary);
-  text-transform: uppercase;
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(50px);
@@ -667,7 +665,7 @@ html {
 /* About Section with staggered animations */
 .about-section {
   padding: 120px 0;
-  background: var(--bg-secondary);
+  z-index: 1;
   position: relative;
 }
 
@@ -836,7 +834,6 @@ html {
 /* Skills Section with cascading animations */
 .skills-section {
   padding: 120px 0;
-  background: var(--bg-tertiary);
   position: relative;
 }
 
@@ -1810,9 +1807,7 @@ html {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--text-primary);
   margin-bottom: 1rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
