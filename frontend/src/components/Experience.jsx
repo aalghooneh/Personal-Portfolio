@@ -26,8 +26,8 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience-section" ref={sectionRef}>
-      <div className="container">
-        <h2 className="section-title animate-on-scroll">Professional Journey</h2>
+      <div className="container" style={{ zIndex: 3 }}>
+        <h2 className="section-title animate-on-scroll text-white">Professional Journey</h2>
         <p className="section-subtitle animate-on-scroll">
           From academic research to practical innovation in autonomous systems
         </p>

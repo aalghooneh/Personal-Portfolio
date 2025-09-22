@@ -1,12 +1,14 @@
 export const realData = {
   about: {
     title: "About Me",
-    description: "I'm a PhD candidate at the University of Waterloo's Mechatronic Vehicle Systems Lab, specializing in autonomous vehicle perception and localization. My research focuses on multi-sensor fusion techniques combining radar, camera, LiDAR, and high-definition maps to advance autonomous vehicle technology.",
+    description: `I started as a Mechanical Engineering with passion for robotics. In my Bachelor, I made a fully autonomous Mobile Robot, then 
+    In my Masters, I worked on Humanoid Robot Upper Body Control on Surena IV, Iran's National Robot.
+    Finally, in my Ph.D., I entered the realm of Autonomous Vehicles, focusing on multi-sensor fusion
+    for perception and localization. Now, I work for GM as AI Developer.`,
     highlights: [
       "PhD candidate at University of Waterloo (2021-2024)",
       "Research in autonomous vehicle perception and localization",
       "Multi-sensor fusion expert (Radar, Camera, LiDAR, HD Maps)",
-      "Published researcher in computer vision and machine learning"
     ],
     stats: [
       { label: "Years Research", value: "4+" },

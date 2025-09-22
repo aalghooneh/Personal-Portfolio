@@ -26,10 +26,10 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="projects-section" ref={sectionRef}>
-      <div className="container">
-        <h2 className="section-title animate-on-scroll">Featured Research & Projects</h2>
-        <p className="section-subtitle animate-on-scroll">
+    <section id="projects" className="projects-section " ref={sectionRef}>
+      <div className="container bg-black bg-opacity-70" style={{ zIndex: 3 }}>
+        <h2 className="section-title animate-on-scroll text-white">Featured Research & Projects</h2>
+        <p className="section-subtitle animate-on-scroll text-green-400">
           Showcasing the intersection of academic research and practical implementation
         </p>
         

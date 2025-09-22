@@ -133,7 +133,7 @@ const Hero = () => {
               
               <div className="mb-6 space-y-2">
                 <div className="flex items-center space-x-2">
-                  <span className="text-green-300 text-lg font-semibold">Ph.D. @ Robotics • University of Waterloo</span>
+                  <span className="text-green-300 text-lg font-semibold">Ph.D. @ Mechatronics • University of Waterloo</span>
                 </div>
                 <span className="text-green-300 text-lg font-semibold">LLMs • Multi-Sensor Fusion • Computer Vision</span>
               </div>

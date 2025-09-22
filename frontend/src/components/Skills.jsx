@@ -89,36 +89,41 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="skills-section bg-black bg-opacity-60 z-10" ref={sectionRef}>
-      <div className="container ">
-        <h2 className="section-title animate-on-scroll">Technical Expertise</h2>
-        <p className="section-subtitle animate-on-scroll">
-          A comprehensive research and development toolkit spanning autonomous vehicles, machine learning, and full-stack development
-        </p>
-        
-        <div className="skills-grid">
-          {skills.categories.map((category, index) => (
-            <div key={index} className="skill-category animate-on-scroll">
-              <h3 className="category-title">{category.title}</h3>
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex} 
-                    className="skill-tag-with-icon"
-                    style={{
-                      '--index': skillIndex,
-                      animationDelay: `${(index * 0.1 + skillIndex * 0.05)}s`
-                    }}
-                  >
-                    <div className="skill-icon">
-                      {getSkillIcon(skill)}
+    <section id="skills" className="min-h-screen bg-black py-20 relative overflow-hidden" ref={sectionRef}>
+      {/* Dark overlay for consistency */}
+      <div className="absolute inset-0 bg-black bg-opacity-70" style={{ zIndex: 1 }}>
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-5xl lg:text-7xl font-bold leading-tight text-white text-center mb-4 animate-on-scroll">
+            Technical <span className="text-green-400">Expertise</span>
+          </h2>
+          <p className="text-gray-300 text-lg text-center mb-16 animate-on-scroll">
+            A comprehensive research and development toolkit spanning autonomous vehicles, machine learning, and full-stack development
+          </p>
+          
+          <div className="skills-grid">
+            {skills.categories.map((category, index) => (
+              <div key={index} className="skill-category animate-on-scroll">
+                <h3 className="text-green-400 text-xl font-bold mb-4">{category.title}</h3>
+                <div className="skills-list">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skillIndex} 
+                      className="skill-tag-with-icon"
+                      style={{
+                        '--index': skillIndex,
+                        animationDelay: `${(index * 0.1 + skillIndex * 0.05)}s`
+                      }}
+                    >
+                      <div className="skill-icon text-green-400">
+                        {getSkillIcon(skill)}
+                      </div>
+                      <span className="skill-name text-gray-300">{skill}</span>
                     </div>
-                    <span className="skill-name">{skill}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
