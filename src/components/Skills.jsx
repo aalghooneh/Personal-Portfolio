@@ -89,13 +89,14 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" 
-        className="min-h-screen bg-black py-30 relative overflow-hidden"
+
+    <section 
+        className="min-h-screen bg-black relative overflow-hidden"
         ref={sectionRef}
     >
-      <div className="relative top-16"/>
+      <div id="skills" className="absolute top-[-5rem]"/>
       {/* Dark overlay for consistency */}
-      <div className="absolute inset-0 bg-black bg-opacity-70" style={{ zIndex: 1 }}>
+      <div className="relative inset-0 bg-black bg-opacity-70" style={{ zIndex: 1 }}>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-5xl lg:text-7xl font-bold leading-tight text-white text-center mb-4 animate-on-scroll">
             Technical <span className="text-green-400">Expertise</span>
@@ -131,6 +132,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

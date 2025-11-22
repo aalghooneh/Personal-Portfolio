@@ -34,7 +34,7 @@ const About = () => {
   return (
     <section 
       id="about"
-      className="min-h-screen bg-black py-20 relative overflow-hidden" 
+      className="min-h-screen bg-black py-20 relative" 
       ref={sectionRef}
     >
       {/* Scroll target positioned above the title */}

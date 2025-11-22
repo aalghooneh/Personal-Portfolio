@@ -11,9 +11,9 @@ export const realData = {
       "Multi-sensor fusion expert (Radar, Camera, LiDAR, HD Maps)",
     ],
     stats: [
-      { label: "Years Research", value: "4+" },
-      { label: "Sensor Technologies", value: "4" },
-      { label: "Research Papers", value: "8+" },
+      { label: "Years Research", value: "10+" },
+      { label: "Sensor Technologies", value: "8" },
+      { label: "Research Papers", value: "12+" },
       { label: "Patent Co-Inventions", value: "2+" }
     ]
   },
@@ -25,7 +25,7 @@ export const realData = {
       },
       {
         title: "Programming & Tools",
-        skills: ["Python", "C++", "MATLAB", "ROS (Robot Operating System)", "TensorFlow", "PyTorch", "OpenCV"]
+        skills: ["TypeScript","Python", "C/C++", "ROS (Robot Operating System)", "TensorFlow", "PyTorch", "OpenCV", "Azure", "Databricks", "Firebase", "Kubernetes"]
       },
       {
         title: "Sensor Technologies",
