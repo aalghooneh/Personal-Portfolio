@@ -26,7 +26,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="projects-section " ref={sectionRef}>
+    <section id="projects" className="min-h-screen bg-black bg-opacity-50 py-20 relative overflow-hidden z-10" ref={sectionRef}>
       <div className="container bg-black bg-opacity-70" style={{ zIndex: 3 }}>
         <h2 className="section-title animate-on-scroll text-white">Featured Research & Projects</h2>
         <p className="section-subtitle animate-on-scroll text-green-400">

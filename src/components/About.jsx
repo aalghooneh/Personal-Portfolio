@@ -38,10 +38,10 @@ const About = () => {
       ref={sectionRef}
     >
       {/* Scroll target positioned above the title */}
-      <div className="absolute top-16"></div>
+      <div className="relative top-16"></div>
       
       {/* Dark overlay for consistency */}
-      <div className="absolute inset-0 bg-black bg-opacity-70"  style={{ zIndex: 1 }}>
+      <div className="relative inset-0 bg-black bg-opacity-70"  style={{ zIndex: 1 }}>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             {/* Section Title */}
@@ -103,12 +103,10 @@ const About = () => {
           transform: translateY(30px);
           transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-        
         .animate-on-scroll.visible {
           opacity: 1;
           transform: translateY(0);
         }
-        
         .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
         .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
         .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }

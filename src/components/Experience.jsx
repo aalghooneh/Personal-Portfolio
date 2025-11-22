@@ -25,7 +25,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="experience-section" ref={sectionRef}>
+    <section id="experience" className="min-h-screen bg-black bg-opacity-70 py-20 relative overflow-hidden z-10" ref={sectionRef}>
       <div className="container" style={{ zIndex: 3 }}>
         <h2 className="section-title animate-on-scroll text-white">Professional Journey</h2>
         <p className="section-subtitle animate-on-scroll">

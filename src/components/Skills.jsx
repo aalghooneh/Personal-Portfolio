@@ -89,7 +89,11 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="min-h-screen bg-black py-20 relative overflow-hidden" ref={sectionRef}>
+    <section id="skills" 
+        className="min-h-screen bg-black py-30 relative overflow-hidden"
+        ref={sectionRef}
+    >
+      <div className="relative top-16"/>
       {/* Dark overlay for consistency */}
       <div className="absolute inset-0 bg-black bg-opacity-70" style={{ zIndex: 1 }}>
         <div className="container mx-auto px-4 relative z-10">
@@ -111,13 +115,13 @@ const Skills = () => {
                       className="skill-tag-with-icon"
                       style={{
                         '--index': skillIndex,
-                        animationDelay: `${(index * 0.1 + skillIndex * 0.05)}s`
+                        animationDelay: `${(index * 0.05 + skillIndex * 0.05)}s`
                       }}
                     >
-                      <div className="skill-icon text-green-400">
+                      <div className="skill-icon text-white-400">
                         {getSkillIcon(skill)}
                       </div>
-                      <span className="skill-name text-gray-300">{skill}</span>
+                      <span className="skill-name text-green-300">{skill}</span>
                     </div>
                   ))}
                 </div>

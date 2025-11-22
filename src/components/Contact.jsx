@@ -61,7 +61,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section" ref={sectionRef}>
+    <section id="contact" className="min-h-screen bg-black bg-opacity-70 py-20 relative overflow-hidden z-10" ref={sectionRef}>
       <div className="container">
         <div className="contact-content">
           <div className="contact-info">
